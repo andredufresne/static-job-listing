@@ -1,0 +1,171 @@
+// Primary Colors
+$desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+// Neutral Colors
+$light-cyan-bg: hsl(180, 52%, 96%);
+$light-cyan-filter: hsl(180, 31%, 95%);
+$dark-cyan: hsl(180, 8%, 52%);
+$very-dark-cyan: hsl(180, 14%, 20%);
+
+// Font Stack
+$font-stack: Spartan, sans-serif;
+
+body {
+    font: 100% $font-stack;
+}
+
+// Top blue highligh
+.top {
+    position: relative;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.color-bg {
+    position: absolute;
+    background: $desaturated-dark-cyan;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+// Background for cards section
+#background {
+    background: $light-cyan-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Styling for cards 
+
+.cards-container {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5% 0;
+
+}
+
+.card {
+    background-color: white;
+    border-left: $desaturated-dark-cyan solid 5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 80%;
+    height: 60%;
+
+}
+
+// Positiona and size logo
+.image {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+}
+
+.image img {
+    width: 50px;
+}
+
+// Give filters background and styling
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+li {
+    background: $light-cyan-filter;
+    border-radius: 5px;
+    color: $desaturated-dark-cyan;
+    display: inline-flex;
+    flex-flow: column;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 5px 5px 5px;
+    padding: 7px;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+
+}
+
+
+.row {
+    display: inline-flex;
+    margin: 20px 20px 0;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.company {
+    color: $desaturated-dark-cyan;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.alert {
+    border-radius: 25px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+// For NEW alert
+.alt-blue {
+    background-color: hsl(180, 8%, 52%);
+}
+
+// For FEATURED alert
+.alt-black {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.break hr {
+    align-self: center;
+    width: 90%;
+}
+
+// Position and style the information row 
+.information {
+    margin-top: 0;
+}
+.information p {
+    color: $dark-cyan;
+    margin-right: 7px;
+}
+
+.information hr {
+    
+    align-self: center;
+    border-left: 5px dotted $dark-cyan;
+    height: 5px;
+    margin-right: 10px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
